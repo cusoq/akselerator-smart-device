@@ -1,3 +1,4 @@
-h1 {
-  color: coral;
-}
+@import "common-styles/_fonts.scss";
+@import "common-styles/_helpers.scss";
+@import "common-styles/_normalize.scss";
+@import "common-styles/_scaffolding.scss";
