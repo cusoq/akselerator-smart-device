@@ -14,9 +14,14 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
   margin: 0 auto;
   padding: 0;
-  color: #ff1144;
+  background-image: url("../img/pattern.png");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-color: #1b2d37;
+  background-size: 100%;
 }
 
 a {

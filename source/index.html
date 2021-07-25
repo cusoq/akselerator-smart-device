@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,66 @@
   <meta name="description" content="Печатные платы" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <header class="header"></header>
-  <main class="main"></main>
+  <header class="header">
+      <a class="header__logo-link">
+        <picture>
+          <source type="image/webp" media="(max-width: 727px)"
+            srcset="img/logo-mobile-46-46.webp 1x, img/logo-mobile-46-46-2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-desk-202-52.webp 1x, img/logo-desk-202-52-2x.webp 2x">
+          <!-- 1х: 46px/46px; 2x: 92px/92px -->
+          <source media="(max-width: 727px)" srcset="img/logo-mobile-46-46.png, img/logo-mobile-46-46-2x.png 2x">
+          <!-- 1х: 202px/52px; 2x: 404px/104px -->
+          <img src="img/logo-desk-202-52.png" srcset="img/logo-desk-202-52-2x.png 2x" width="202" height="52"
+            alt="Логотип компании">
+        </picture>
+      </a>
+      <ul class="header__contacts-list">
+        <li>
+          <a class="header__contacts-link" href="mailto:info@sd.ru" aria-label="Ссылка для почты">
+            <svg width="27" height="22" viewBox="0 -3 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#envelope"></use>
+            </svg>
+            <span>info@sd.ru</span>
+          </a>
+        </li>
+        <li>
+          <a class="header__contacts-link" href="tel:+74950005252" aria-label="Ссылка для звонка">
+            <svg width="26" height="26" viewBox="0 -2 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+            </svg>
+            <span>+7 (495) 000 52 52</span>
+          </a>
+        </li>
+      </ul>
+      <a class="header__recall-link" href="#">Заказать звонок</a>
+  </header>
+
+  <main class="main">
+    <section class="main__intro intro">
+      <h1>Печатные платы</h1>
+      <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a class="intro__get-advice-link" href="#">Получить бесплатную консультацию</a>
+      <a class="intro__scrolldown-link" href="#">Скролл вниз</a>
+    </section>
+
+    <section class="main__features features">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+
+
+    </section>
+    <section class="about-us">
+      <h2>О компании</h2>
+    </section>
+    <section class="offers">
+      <h2>Service Device предлагает следующие товары и услуги</h2>
+    </section>
+    <section class="feedback">
+      <h2>Остались вопросы? Задайте их нам!</h2>
+    </section>
+  </main>
   <footer class="footer"></footer>
 </body>
+
 </html>

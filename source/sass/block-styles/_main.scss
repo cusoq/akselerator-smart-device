@@ -1,4 +1,17 @@
 .main {
   flex-grow: 1;
-  background-color: #00b2ff;
+  // background-color: #00b2ff;
+
+  background-image: url("../img/triangle-bg-desk.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media (max-width: 1024px) {
+    background-image: url("../img/triangle-bg-tab.png");
+  }
+
+  @media (max-width: 727px) {
+    background-image: none;
+  }
 }

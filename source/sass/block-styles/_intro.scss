@@ -1,0 +1,20 @@
+.intro {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 790px;
+  margin: 0 auto;
+  outline: 2px dashed rgb(166, 202, 94);
+  padding: 145px 145px 0 145px;
+}
+
+.intro h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.intro__get-advice-link {
+  @include btn-like-link-mixin (16px, 55px, 410px);
+  box-shadow: none;
+  background-color: rgb(112, 154, 168);
+}
