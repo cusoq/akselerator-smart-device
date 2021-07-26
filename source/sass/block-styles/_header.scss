@@ -38,7 +38,7 @@
 }
 
 .header__contacts-list {
-  list-style: none;
+  @include list-reset();
   // display: grid;
   // grid-template-columns: repeat(2, minmax(210px, auto));
   // grid-column-gap: 10px;
@@ -70,6 +70,7 @@
 }
 
 .header__contacts-link {
+  @include hover-focus-activity();
   font-family: "PT Mono", "Courier", monospace;
   display: flex;
   align-items: center;
@@ -91,6 +92,7 @@
 
 .header__recall-link {
   @include btn-like-link-mixin();
+  @include hover-focus-activity();
 
   @media (max-width: 1024px) {
     display: none;

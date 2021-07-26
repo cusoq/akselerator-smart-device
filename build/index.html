@@ -12,61 +12,158 @@
 
 <body>
   <header class="header">
-      <a class="header__logo-link">
-        <picture>
-          <source type="image/webp" media="(max-width: 727px)" srcset="img/logo-mobile-46-46.webp 1x, img/logo-mobile-46-46-2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-desk-202-52.webp 1x, img/logo-desk-202-52-2x.webp 2x">
-          <!-- 1х: 46px/46px; 2x: 92px/92px -->
-          <source media="(max-width: 727px)" srcset="img/logo-mobile-46-46.png, img/logo-mobile-46-46-2x.png 2x">
-          <!-- 1х: 202px/52px; 2x: 404px/104px -->
-          <img src="img/logo-desk-202-52.png" srcset="img/logo-desk-202-52-2x.png 2x" width="202" height="52" alt="Логотип компании">
-        </picture>
-      </a>
-      <ul class="header__contacts-list">
-        <li>
-          <a class="header__contacts-link" href="mailto:info@sd.ru" aria-label="Ссылка для почты">
-            <svg width="27" height="22" viewBox="0 -3 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#envelope"></use>
-            </svg>
-            <span>info@sd.ru</span>
-          </a>
-        </li>
-        <li>
-          <a class="header__contacts-link" href="tel:+74950005252" aria-label="Ссылка для звонка">
-            <svg width="26" height="26" viewBox="0 -2 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#phone-call"></use>
-            </svg>
-            <span>+7 (495) 000 52 52</span>
-          </a>
-        </li>
-      </ul>
-      <a class="header__recall-link" href="#">Заказать звонок</a>
+    <a class="header__logo-link">
+      <picture>
+        <source type="image/webp" media="(max-width: 727px)" srcset="img/logo-mobile-46-46.webp 1x, img/logo-mobile-46-46-2x.webp 2x">
+        <source type="image/webp" srcset="img/logo-desk-202-52.webp 1x, img/logo-desk-202-52-2x.webp 2x">
+        <!-- 1х: 46px/46px; 2x: 92px/92px -->
+        <source media="(max-width: 727px)" srcset="img/logo-mobile-46-46.png, img/logo-mobile-46-46-2x.png 2x">
+        <!-- 1х: 202px/52px; 2x: 404px/104px -->
+        <img src="img/logo-desk-202-52.png" srcset="img/logo-desk-202-52-2x.png 2x" width="202" height="52" alt="Логотип компании">
+      </picture>
+    </a>
+    <ul class="header__contacts-list">
+      <li>
+        <a class="header__contacts-link" href="mailto:info@sd.ru" aria-label="Ссылка для почты">
+          <svg width="27" height="22" viewBox="0 -3 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#envelope"></use>
+          </svg>
+          <span>info@sd.ru</span>
+        </a>
+      </li>
+      <li>
+        <a class="header__contacts-link" href="tel:+74950005252" aria-label="Ссылка для звонка">
+          <svg width="26" height="26" viewBox="0 -2 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+          </svg>
+          <span>+7 (495) 000 52 52</span>
+        </a>
+      </li>
+    </ul>
+    <a class="header__recall-link" href="#">Заказать звонок</a>
   </header>
 
   <main class="main">
-    <section class="main__intro intro">
+    <!-- <section class="main__intro intro">
       <h1>Печатные платы</h1>
       <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <a class="intro__get-advice-link" href="#">Получить бесплатную консультацию</a>
       <a class="intro__scrolldown-link" href="#">Скролл вниз</a>
-    </section>
+    </section> -->
 
-    <section class="main__features features">
+    <!-- <section class="main__features features">
       <h2 class="visually-hidden">Наши преимущества</h2>
 
-
     </section>
-    <section class="about-us">
+    <section class="main__about-us about-us">
       <h2>О компании</h2>
     </section>
-    <section class="offers">
+    <section class="main__offers offers">
       <h2>Service Device предлагает следующие товары и услуги</h2>
     </section>
-    <section class="feedback">
+
+
+    <section class="main__feedback feedback">
       <h2>Остались вопросы? Задайте их нам!</h2>
-    </section>
+      <p>Мы проконсультируем Вас бесплатно</p>
+
+      <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="feedback__inner-wrapper">
+          <div class="feedback__input-container">
+            <input type="text" name="name" placeholder="Имя" required>
+          </div>
+          <div class="feedback__input-container feedback__input-container--tel">
+            <input pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" type="tel" name="tel"
+              placeholder="Телефон" required>
+          </div>
+          <div class="feedback__textarea-container">
+            <textarea rows="7" cols="35" name="question" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <button class="feedback__button" type="submit">Задать вопрос</button>
+          <div class="feedback__personal-data-check-container">
+            <input type="checkbox" name="personal-data" id="personal-data" checked required>
+            <label for="personal-data" tabindex="0">Я согласен на обработку персональных данных</label>
+          </div>
+        </div>
+      </form>
+
+    </section> -->
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="footer__footer-header">
+      <a class="footer__logo-link">
+        <picture>
+          <source type="image/webp" srcset="img/logo-footer-216-52.webp 1x, img/logo-footer-216-52-2x.webp 2x">
+          <!-- 1х: 216px/52px; 2x: 432px/104px -->
+          <img src="img/logo-footer-216-52.png" srcset="img/logo-footer-216-52-2x 2x" width="216" height="52" alt="Логотип компании">
+        </picture>
+      </a>
+      <p>1999-2018 SD Service Devices</p>
+
+      <ul class="footer__social social">
+        <li>
+          <a href="#" aria-label="Ссылка на наш фейсбук">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ссылка на наши одноклассники">
+            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ссылка на наш вконтакте">
+            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer__navigation navigation">
+      <h3>Разделы сайта</h3>
+      <button class="footer__add-button"></button>
+      <ul class="navigation__list">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Производство печатных плат</a></li>
+        <li><a href="#">Монтаж печатных плат</a></li>
+        <li><a href="#">Комплектующие</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <section class="footer__contacts contacts">
+      <h3>Наш офис</h3>
+      <button class="footer__add-button"></button>
+      <p>
+        <a href="https://yandex.ru/maps/-/CCUi4VVh8B" aria-label="Ссылка на местонахождение на карте">г. Мытищи,
+          Олимпийский проспект, д.10</a><br>
+        <a href="tel:+74955894050" aria-label="Ссылка для звонка в офис">+7 (495) 589-40-50</a><br>
+        <a href="tel:+79250038767" aria-label="Ссылка для звонка в офис">+7 (925) 003-87-67></a><br>
+        <a href="tel:+792692608079" aria-label="Ссылка для звонка в офис">+7 (926) 926-080-79</a><br>
+      </p>
+    </section>
+    <section class="footer__legal legal">
+      <h3 class="visually-hidden">Юридическая информация</h3>
+      <div class="legal__list">
+        <ul class="legal__text-info-list">
+        <li>Все права защищены</li>
+        <li>1999-2018 SD Service Devices</li>
+      </ul>
+        <ul class="legal__links-list">
+        <li><a href="#">Условия конфиденциальности</a></li>
+        <li><a href="#" aria-label="Ссылка на сайт разработчика">Developed by wow studio</a></li>
+      </ul>
+      </div>
+    </section>
+
+  </footer>
 </body>
 
 </html>

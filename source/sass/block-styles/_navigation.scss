@@ -1,0 +1,39 @@
+.navigation {
+  padding: 0 20px 20px 10px;
+
+  @media (max-width: 1024px) {
+    padding: 40px 28px;
+  }
+
+  @media (max-width: 727px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 0 15px;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    max-width: 412px;
+  }
+}
+
+.navigation__list {
+  @include list-reset();
+  background-color: rgb(252, 255, 80);
+  column-width: 220px;
+  column-gap: 4.5em;
+
+  @media (max-width: 1024px) {
+    column-width: auto;
+  }
+
+  @media (max-width: 727px) {
+    padding: 0 0 15px 0;
+  }
+}
+
+.navigation a {
+  font-family: "PT Mono", "Courier", monospace;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}

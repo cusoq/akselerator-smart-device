@@ -1,0 +1,27 @@
+.contacts {
+  padding: 0 10px 10px 95px;
+
+  @media (max-width: 1024px) {
+    padding: 40px 18px;
+  }
+
+  @media (max-width: 727px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 10px 15px;
+    max-width: 412px;
+  }
+}
+
+.contacts p {
+  padding: 0 20px 0 0;
+}
+
+.contacts a {
+  font-family: "PT Mono", "Courier", monospace;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}

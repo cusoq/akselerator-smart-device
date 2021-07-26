@@ -1,0 +1,9 @@
+.social {
+  @include list-reset();
+  display: flex;
+  column-gap: 16px;
+}
+
+.social a {
+  @include hover-focus-activity();
+}
