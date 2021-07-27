@@ -6,20 +6,31 @@
   }
 
   @media (max-width: 727px) {
-    display: flex;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 52px;
+    grid-template-rows: 72px 1fr;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0 0 10px 15px;
-    max-width: 412px;
+    // max-width: 412px;
   }
 }
 
 .contacts p {
   padding: 0 20px 0 0;
+
+  @media (max-width: 727px) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
+    padding: 0 20px 20px 0;
+  }
 }
 
 .contacts a {
+  @include hover-focus-activity();
   font-family: "PT Mono", "Courier", monospace;
   font-size: 15px;
   line-height: 25px;

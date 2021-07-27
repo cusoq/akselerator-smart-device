@@ -36,27 +36,44 @@
   }
 
   @media (max-width: 727px) {
-    margin: 30px 0 15px 0;
-    outline: 2px dotted rgb(173, 110, 173);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    // outline: 2px dotted rgb(173, 110, 173);
     width: auto;
   }
 }
 
-.footer__add-button {
+.footer__toggle-button {
   display: none;
 
   @media (max-width: 727px) {
+    @include hover-focus-activity();
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: rgb(143, 1, 1);
+    background-color: #fafafa;
     border: none;
+
+    &--hide {
+      background-image: url("../img/union.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--show {
+      background-image: url("../img/close.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 }
 
 .footer__footer-header {
   flex-basis: 25%;
-  background-color: rgb(238, 180, 109);
+  // background-color: rgb(238, 180, 109);
   padding: 0 0 60px 64px;
   display: flex;
   flex-direction: column;
@@ -70,12 +87,13 @@
     padding: 0 24px;
     min-height: 95px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    // box-shadow: 0 52px rgb(230, 255, 255), 0 53px rgb(14, 14, 88);
   }
 
   @media (max-width: 727px) {
     flex-direction: column;
     padding: 45px 24px;
-    min-height: 255px;
+    min-height: 260px;
   }
 }
 
@@ -95,7 +113,7 @@
 
 .footer__navigation {
   flex-basis: 30%;
-  background-color: rgb(238, 10, 109);
+  // background-color: rgb(238, 10, 109);
 
   @media (max-width: 1024px) {
     flex-basis: 50%;
@@ -108,7 +126,7 @@
 
 .footer__contacts {
   flex-basis: 25%;
-  background-color: rgb(171, 166, 204);
+  // background-color: rgb(171, 166, 204);
 
   @media (max-width: 1024px) {
     flex-basis: 50%;
