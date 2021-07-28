@@ -8,13 +8,13 @@
   padding: 60px 10px 20px 175px;
   background-image: url("../img/2005-bg.png");
   background-repeat: no-repeat;
-  background-position: -30px 52%;
+  background-position: -30px 110px;
   background-size: 19%;
 
   @media (max-width: 1024px) {
     min-height: 490px;
     background-image: url("../img/2005-bg.png");
-    background-position: -30px 52%;
+    background-position: -30px 55px;
     background-size: 34%;
     padding: 55px 10px 20px 190px;
   }
@@ -31,18 +31,19 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   font-stretch: semi-condensed;
   margin: 40px 0 20px 0;
 
   @media (max-width: 1024px) {
     font-size: 32px;
-    margin: 0;
+    margin: 0 0 30px 0;
     line-height: 141%;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 727px) {
     font-size: 28px;
+    margin: 0 0 20px 0;
   }
 }
 

@@ -1,4 +1,196 @@
 .offers {
-  min-height: 940px;
+  min-height: 920px;
   background-color: #1b2d37;
+  padding: 60px 0 20px 0;
+
+  @media (max-width: 1024px) {
+    padding: 25px;
+    min-height: 940px;
+  }
+
+  @media (max-width: 727px) {
+    padding: 25px 20px 20px 20px;
+  }
+}
+
+.offers__inner-wrapper {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  // background-color: rgb(69, 5, 18);
+}
+
+.offers h2 {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  font-stretch: semi-condensed;
+
+  @media (max-width: 1024px) {
+    line-height: 44px;
+    font-size: 32px;
+    width: 86%;
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 727px) {
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    line-height: 40px;
+    width: 100%;
+  }
+}
+
+.offers h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  font-stretch: semi-condensed;
+  margin: 0;
+}
+
+.offers__link {
+  @include hover-focus-activity();
+  position: relative;
+  padding: 50px 40px;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: ">";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 63px;
+    color: #ffffff;
+    background-color: #00b2ff;
+  }
+
+  @media (max-width: 1024px) {
+    box-sizing: border-box;
+    padding: 45px 0 0 40px;
+  }
+
+  @media (max-width: 727px) {
+    padding: 20px 0 0 30px;
+  }
+}
+
+.offers__link--production {
+  background-image: url("../img/offers-bg-1-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offers-bg-1-desk-2x.png");
+  }
+
+  @media (max-width: 1024px) {
+    background-image: url("../img/offers-bg-1-tab.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-1-tab-2x.png");
+    }
+  }
+
+  @media (max-width: 727px) {
+    background-image: url("../img/offers-bg-1-mob.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-1-mob-2x.png");
+    }
+  }
+}
+
+.offers__link--assembling {
+  background-image: url("../img/offers-bg-2-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offers-bg-2-desk-2x.png");
+  }
+
+  @media (max-width: 1024px) {
+    background-image: url("../img/offers-bg-2-tab.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-2-tab-2x.png");
+    }
+  }
+
+  @media (max-width: 727px) {
+    background-image: url("../img/offers-bg-2-mob.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-2-mob-2x.png");
+    }
+  }
+}
+
+.offers__link--accessories {
+  background-image: url("../img/offers-bg-3-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offers-bg-3-desk-2x.png");
+  }
+
+  @media (max-width: 1024px) {
+    background-image: url("../img/offers-bg-3-tab.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-3-tab-2x.png");
+    }
+  }
+
+  @media (max-width: 727px) {
+    background-image: url("../img/offers-bg-3-mob.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offers-bg-3-mob-2x.png");
+    }
+  }
+}
+
+.offers__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 28px;
+  padding: 20px 0 0 0;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+    padding: 20px 0 0 0;
+  }
+
+  @media (max-width: 727px) {
+    row-gap: 32px;
+  }
+}
+
+.offers li {
+  max-width: 370px;
+  width: 31%;
+  min-height: 620px;
+  // outline: 2px dotted rgb(209, 248, 248);
+  display: flex;
+
+  @media (max-width: 1024px) {
+    max-width: 770px;
+    width: 100%;
+    min-height: 256px;
+  }
 }
