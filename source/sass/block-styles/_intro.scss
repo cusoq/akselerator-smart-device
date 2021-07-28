@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   max-width: 1920px;
-  min-height: 790px;
+  min-height: 760px;
   margin: 0 auto;
-  // outline: 2px dashed rgb(166, 202, 94);
+  outline: 2px dashed rgb(166, 202, 94);
   padding: 200px 250px 0 250px;
 
   background-image: url("../img/header-bg-desk.png");
@@ -12,11 +12,21 @@
   background-position: 51% -115px;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    // background-size: 100%;
+    background-image: url("../img/header-bg-desk-2x.png");
+  }
+
   @media (max-width: 1024px) {
     min-height: 595px;
     padding: 95px 185px 0 90px;
     background-image: url("../img/header-bg-tablet.png");
     background-position: 51% -90px;
+
+    @media (min-resolution: 2dppx) {
+      // background-size: 100%;
+      background-image: url("../img/header-bg-tablet-2x.png");
+    }
   }
 
   @media (max-width: 727px) {
@@ -24,6 +34,11 @@
     padding: 215px 15px 0 15px;
     background-image: url("../img/header-bg-mobil.png");
     background-position: 51% -70px;
+
+    @media (min-resolution: 2dppx) {
+      // background-size: 100%;
+      background-image: url("../img/header-bg-mobil-2x.png");
+    }
   }
 }
 
@@ -80,6 +95,7 @@
   }
 
   @media (max-width: 727px) {
+    width: 100%;
     padding: 0 0 0 50px;
     margin: 25px 0 45px 0;
     font-size: 16px;

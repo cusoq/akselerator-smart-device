@@ -22,6 +22,14 @@ body {
   background-position: 50% top;
   background-color: #1b2d37;
   background-size: 100%;
+
+  @media (max-width: 1024px) {
+    background-image: url("../img/pattern-tablet.png");
+  }
+
+  @media (max-width: 727px) {
+    background-image: url("../img/pattern-mobile.png");
+  }
 }
 
 a {
