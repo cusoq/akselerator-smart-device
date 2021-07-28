@@ -3,7 +3,7 @@
 }
 
 .main__inner-wrapper {
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url("../img/triangle-bg-desk.png");
   background-repeat: no-repeat;
   background-position: 50% -20px;
@@ -13,7 +13,6 @@
   @media (max-width: 1024px) {
     background-image: url("../img/triangle-bg-tab.png");
     background-position: 200% 20%;
-    // background-position: 0 -20px;
     background-size: 70%;
   }
 

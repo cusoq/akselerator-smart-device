@@ -1,3 +1,80 @@
 .about-us {
-  min-height: 220px;
+  min-height: 520px;
+  // background-color: rgb(203, 219, 233);
+  color: #666666;
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 10px 20px 175px;
+  background-image: url("../img/2005-bg.png");
+  background-repeat: no-repeat;
+  background-position: -30px 52%;
+  background-size: 19%;
+
+  @media (max-width: 1024px) {
+    min-height: 490px;
+    background-image: url("../img/2005-bg.png");
+    background-position: -30px 52%;
+    background-size: 34%;
+    padding: 55px 10px 20px 190px;
+  }
+
+  @media (max-width: 727px) {
+    min-height: 600px;
+    width: 290px;
+    background-image: none;
+    padding: 55px 0 10px 0;
+  }
+}
+
+.about-us h2 {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-stretch: semi-condensed;
+  margin: 40px 0 20px 0;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    margin: 0;
+    line-height: 141%;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+}
+
+.about-us p {
+  font-family: "PT Mono", "Courier", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 727px) {
+    margin: 20px 0 40px 0;
+  }
+}
+
+.about-us__detals-link {
+  @include btn-like-link-mixin();
+  @include hover-focus-activity();
+  color: #00b2ff;
+  box-shadow: 0 0 0 2px #00b2ff;
+  margin: 25px 0 0 0;
+
+  @media (max-width: 727px) {
+    margin: -10px 0 0 0;
+  }
+}
+
+.about-us span {
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
