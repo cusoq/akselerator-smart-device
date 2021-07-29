@@ -1,15 +1,15 @@
 .offers {
-  min-height: 920px;
+  min-height: 940px;
   background-color: #1b2d37;
   padding: 60px 0 20px 0;
 
   @media (max-width: 1024px) {
-    padding: 25px;
-    min-height: 940px;
+    padding: 25px 25px 80px 25px;
+    min-height: 580px;
   }
 
   @media (max-width: 727px) {
-    padding: 25px 20px 20px 20px;
+    padding: 25px 20px 60px 20px;
   }
 }
 
@@ -17,7 +17,6 @@
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  // background-color: rgb(69, 5, 18);
 }
 
 .offers h2 {
@@ -37,7 +36,7 @@
 
   @media (max-width: 727px) {
     font-size: 28px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     line-height: 40px;
     width: 100%;
   }

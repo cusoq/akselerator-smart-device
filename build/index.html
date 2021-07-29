@@ -120,28 +120,29 @@
     </section>
 
     <section class="main__feedback feedback">
+      <div class="feedback__inner-wrapper">
       <h2>Остались вопросы? Задайте их нам!</h2>
       <p>Мы проконсультируем Вас бесплатно</p>
 
-      <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="feedback__inner-wrapper">
-          <div class="feedback__input-container">
+      <form class="feedback__form customer-data" method="post" action="https://echo.htmlacademy.ru">
+        <div class="customer-data__inner-wrapper">
+          <div class="customer-data__input-container customer-data__input-container--name">
             <input type="text" name="name" placeholder="Имя" required="">
           </div>
-          <div class="feedback__input-container feedback__input-container--tel">
+          <div class="customer-data__input-container customer-data__input-container--tel">
             <input pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" type="tel" name="tel" placeholder="Телефон" required="">
           </div>
-          <div class="feedback__textarea-container">
-            <textarea rows="7" cols="35" name="question" placeholder="Ваш вопрос"></textarea>
+          <div class="customer-data__textarea-container">
+            <textarea rows="4" cols="35" name="question" placeholder="Ваш вопрос"></textarea>
           </div>
-          <button class="feedback__button" type="submit">Задать вопрос</button>
-          <div class="feedback__personal-data-check-container">
+          <button class="customer-data__button" type="submit">Задать вопрос</button>
+          <div class="customer-data__personal-data-check-container">
             <input type="checkbox" name="personal-data" id="personal-data" checked="" required="">
-            <label for="personal-data" tabindex="0">Я согласен на обработку персональных данных</label>
+            <label class="customer-data__checkbox-label" for="personal-data" tabindex="0">Я согласен на обработку персональных данных</label>
           </div>
         </div>
       </form>
-
+    </div>
     </section>
   </main>
 
@@ -183,7 +184,7 @@
     <nav class="footer__navigation navigation">
       <h3>Разделы сайта</h3>
       <button class="footer__toggle-button button footer__toggle-button--hide" data-dropdown="nav-list"></button>
-      <ul class="navigation__list visually-hidden" data-dropdown="nav-list">
+      <ul class="navigation__list" data-dropdown="nav-list">
         <li><a href="#">О компании</a></li>
         <li><a href="#">Продукты</a></li>
         <li><a href="#">Производство печатных плат</a></li>

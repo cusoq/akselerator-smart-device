@@ -1,4 +1,72 @@
 .feedback {
-  min-height: 662px;
-  background-color: rgb(97, 167, 167);
+  color: #ffffff;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 670px;
+  background-color: #00b2ff;
+  background-image: url("../img/airplan.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 175px -55px;
+  padding: 0 375px 0 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/airplan-2x.png");
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 90px;
+    background-image: none;
+    min-height: 660px;
+  }
+
+  @media (max-width: 727px) {
+    min-height: 640px;
+    padding: 0 10px;
+  }
+}
+
+.feedback__inner-wrapper {
+  // outline: 2px dotted rgb(63, 17, 45);
+  width: 100%;
+  max-width: 570px;
+  margin: 0 0 0 auto;
+  padding: 90px 0 0 0;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+  }
+
+  @media (max-width: 727px) {
+    padding: 30px 0 0 0;
+  }
+}
+
+.feedback h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-stretch: semi-condensed;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 727px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.feedback p {
+  font-family: "PT Mono", "Courier", monospace;
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 22px;
 }
