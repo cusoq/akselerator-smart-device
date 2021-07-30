@@ -1,0 +1,52 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 135px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal__container {
+  position: relative;
+  width: 490px;
+  background-color: #00b2ff;
+  padding: 30px 40px 35px 40px;
+}
+
+.modal h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-stretch: semi-condensed;
+}
+
+.modal textarea {
+  min-height: 75px;
+}
+
+.modal__close-button {
+  @include hover-focus-activity();
+  position: absolute;
+  top: 5px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+}

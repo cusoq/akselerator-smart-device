@@ -24,6 +24,14 @@
   }
 }
 
+.customer-data__inner-wrapper--modal {
+  display: flex;
+  flex-direction: column;
+  // column-gap: 20px;
+  padding: 20px 0;
+  row-gap: 30px;
+}
+
 .customer-data__input-container {
   // outline: 2px dashed #0e083d;
 
