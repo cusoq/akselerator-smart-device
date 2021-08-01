@@ -11064,13 +11064,14 @@
   });
 });
 
-
+//маска полей телефона
 
 $(document).ready(function () {
   $('#modal-tel-input').mask('+7 (999) 99-9999');
-
+  $('#feedback-tel-input').mask('+7 (999) 99-9999');
 });
 
+// аккордеон
 $(document).ready(function () {
   $('.footer__toggle-button').click(function () {
     $(this).toggleClass('footer__toggle-button--hide');
