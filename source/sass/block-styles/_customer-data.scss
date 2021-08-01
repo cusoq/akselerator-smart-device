@@ -1,6 +1,5 @@
 .customer-data {
   width: 100%;
-  // outline: 5px dashed #bbb2ff;
   color: #ffffff;
 }
 
@@ -91,6 +90,10 @@
   min-height: 155px;
   border: none;
   padding: 15px;
+
+  @media (max-width: 1024px) {
+    min-height: 165px;
+  }
 
   @media (max-width: 727px) {
     min-height: 75px;

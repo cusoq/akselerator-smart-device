@@ -56,6 +56,7 @@
     height: 50px;
     background-color: #fafafa;
     border: none;
+    cursor: pointer;
 
     &--hide {
       background-image: url("../img/union.svg");
@@ -139,4 +140,10 @@
 
 .footer__legal {
   flex-basis: 100%;
+}
+
+.footer__toggled-block--hidden {
+  @media (max-width: 727px) {
+    display: none;
+  }
 }
