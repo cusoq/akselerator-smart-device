@@ -10,7 +10,9 @@ $(document).ready(function () {
   $('.footer__toggle-button').click(function () {
     $(this).toggleClass('footer__toggle-button--hide');
     $(this).toggleClass('footer__toggle-button--show');
-    $(this).next('.footer__toggled-block--hidden').slideToggle();
-    $(".accordeon").find('.footer__toggled-block').not(this).addClass('footer__toggled-block--hidden');
+    $(this).next('.footer__toggled-block').toggleClass('footer__toggled-block--hidden');
+    $(this).parent().siblings('.accordeon').find('.footer__toggled-block').addClass('footer__toggled-block--hidden');
+    $(this).parent().siblings('.accordeon').find('.footer__toggle-button').removeClass('footer__toggle-button--show');
+    $(this).parent().siblings('.accordeon').find('.footer__toggle-button').addClass('footer__toggle-button--hide');
 });
 });
