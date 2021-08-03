@@ -29,22 +29,25 @@ getFocus();
 
 // открытие модального окна
 var showPopup = function () {
-  popupOverlayElement.classList.remove('visually-hidden');
-  modalBlockElement.classList.remove('visually-hidden');
-  modalForm.addEventListener('submit', onSubmit);
-  pageElement.classList.add('non-scroll');
+  if (popupOverlayElement || modalBlockElement || modalForm) {
+    popupOverlayElement.classList.remove('visually-hidden');
+    modalBlockElement.classList.remove('visually-hidden');
+    modalForm.addEventListener('submit', onSubmit);
+    pageElement.classList.add('non-scroll');
+  }
 };
 
 // валидация заполнения полей и запись в localStorage
 
 var setLocalStorage = function () {
-  localStorage.setItem('modal-name', popupNameInputElement.value);
-  localStorage.setItem('modal-tel', popupTelInputElement.value);
-  localStorage.setItem('message', popupTextareaElement.value);
-  localStorage.setItem('name', feedbackNameInputElement.value);
-  localStorage.setItem('tel', feedbackTelInputElement.value);
-  localStorage.setItem('question', feedbackTextareaElement.value);
-
+  if (popupNameInputElement || popupTelInputElement || popupTextareaElement || feedbackNameInputElement || feedbackTelInputElement || feedbackTextareaElement) {
+    localStorage.setItem('modal-name', popupNameInputElement.value);
+    localStorage.setItem('modal-tel', popupTelInputElement.value);
+    localStorage.setItem('message', popupTextareaElement.value);
+    localStorage.setItem('name', feedbackNameInputElement.value);
+    localStorage.setItem('tel', feedbackTelInputElement.value);
+    localStorage.setItem('question', feedbackTextareaElement.value);
+  }
   modalForm.submit();
   feedbackForm.submit();
   closePopup();

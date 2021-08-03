@@ -2,10 +2,6 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // padding: 135px 0 0 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
 
@@ -22,7 +18,6 @@
   position: fixed;
   left: calc(50% - 245px);
   top: 135px;
-  // position: relative;
   width: 490px;
   background-color: #00b2ff;
   padding: 30px 40px 35px 40px;
@@ -54,4 +49,5 @@
   height: 60px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }

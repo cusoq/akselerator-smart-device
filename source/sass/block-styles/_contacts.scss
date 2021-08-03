@@ -6,21 +6,16 @@
   }
 
   @media (max-width: 727px) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr 52px;
     grid-template-rows: 72px 1fr;
     align-items: center;
     padding: 0 0 0 15px;
-    // max-width: 412px;
   }
 }
 
 .contacts__list {
   @include list-reset();
-  // padding: 0 20px 0 0;
 
   @media (max-width: 727px) {
     grid-column: 1 / 3;

@@ -6,8 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: rgba(141, 109, 141, 0.3);
-  // outline: 2px dashed rgb(197, 142, 122);
 
   @media (max-width: 1024px) {
     padding: 20px 20px 20px 25px;
@@ -39,10 +37,6 @@
 
 .header__contacts-list {
   @include list-reset();
-  // display: grid;
-  // grid-template-columns: repeat(2, minmax(210px, auto));
-  // grid-column-gap: 10px;
-  // grid-row-gap: 10px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 40px;

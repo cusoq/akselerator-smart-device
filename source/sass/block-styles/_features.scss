@@ -13,11 +13,6 @@
 
 .features__features-list {
   @include list-reset();
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // column-gap: 30px;
-  // row-gap: 30px;
   display: grid;
   grid-template-columns: repeat(2, minmax(350px, auto));
   grid-column-gap: 30px;
@@ -25,8 +20,6 @@
   justify-content: space-between;
   max-width: 1164px;
   margin: 0 auto;
-  // padding: 0 20px;
-  // outline: 2px dashed rgb(98, 9, 46);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -48,7 +41,6 @@
 }
 
 .features__features-list li {
-  // outline: 5px dashed rgb(243, 105, 105);
   min-height: 300px;
   width: 100%;
   display: flex;
