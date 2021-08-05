@@ -48,9 +48,12 @@
     justify-content: space-between;
     padding: 0;
     column-gap: 25px;
+    width: 90px;
   }
 
   @media (max-width: 727px) {
+    padding: 5px 0 0 0;
+    width: 75px;
     column-gap: 10px;
   }
 }
@@ -78,8 +81,10 @@
 }
 
 .header__contacts-link svg {
+  width: 20px;
+
   @media (max-width: 1024px) {
-    width: 34px;
+    width: 26px;
     height: auto;
   }
 }
