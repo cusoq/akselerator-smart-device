@@ -9,7 +9,10 @@ $(document).ready(function () {
 });
 // аккордеон
 $(document).ready(function () {
-  if ($('.footer__toggle-button')) {
+  if ($('.footer__toggle-button') || $('.footer__toggled-block')) {
+      $('.footer__toggle-button').toggleClass('footer__toggle-button--hide');
+      $('.footer__toggle-button').toggleClass('footer__toggle-button--show');
+      $('.footer__toggled-block').addClass('footer__toggled-block--hidden');
     $('.footer__toggle-button').click(function () {
       $(this).toggleClass('footer__toggle-button--hide');
       $(this).toggleClass('footer__toggle-button--show');

@@ -33,7 +33,7 @@ var showPopup = function () {
     popupOverlayElement.classList.remove('visually-hidden');
     modalBlockElement.classList.remove('visually-hidden');
     modalForm.addEventListener('submit', onSubmit);
-    pageElement.classList.add('non-scroll');
+    // pageElement.classList.add('non-scroll');
   }
 };
 
