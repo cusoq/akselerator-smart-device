@@ -82,17 +82,17 @@
 
 .footer__footer-header {
   flex-basis: 25%;
-  padding: 0 0 60px 64px;
+  padding: 0 0 0 64px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 195px;
 
   @media (max-width: 1024px) {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
-    padding: 0 24px;
+    padding: 0 5px 0 24px;
     min-height: 95px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
