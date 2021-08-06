@@ -249,21 +249,20 @@
 
   </footer>
   <div class="modal-overlay visually-hidden">
-  </div>
-  <div class="modal visually-hidden">
-    <button class="modal__close-button" aria-label="Кнопка закрытия модального окна">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/sprite_auto.svg#cross"></use>
-      </svg>
-    </button>
-    <h2>Закажите звонок</h2>
-    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form class="modal__form customer-data customer-data--modal" method="post" action="https://echo.htmlacademy.ru">
-      <div class="customer-data__inner-wrapper customer-data__inner-wrapper--modal">
-        <div class="customer-data__input-container customer-data__input-container--name-modal">
-          <input id="modal-name-input" type="text" name="name" placeholder="Имя" required="" autofocus="">
-        </div>
-        <div class="customer-data__input-container customer-data__input-container--tel-modal">
+    <div class="modal visually-hidden">
+      <button class="modal__close-button" aria-label="Кнопка закрытия модального окна">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite_auto.svg#cross"></use>
+        </svg>
+      </button>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="modal__form customer-data customer-data--modal" method="post" action="https://echo.htmlacademy.ru">
+        <div class="customer-data__inner-wrapper customer-data__inner-wrapper--modal">
+          <div class="customer-data__input-container customer-data__input-container--name-modal">
+            <input id="modal-name-input" type="text" name="name" placeholder="Имя" required="" autofocus="">
+          </div>
+          <div class="customer-data__input-container customer-data__input-container--tel-modal">
           <input id="modal-tel-input" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" type="tel" name="tel" placeholder="Телефон" required="">
         </div>
         <div class="customer-data__textarea-container customer-data__textarea-container--modal">
@@ -274,9 +273,10 @@
           <input type="checkbox" name="personal-data" id="personal-data-modal" checked="" required="">
           <label class="customer-data__checkbox-label customer-data__checkbox-label--modal" for="personal-data-modal" tabindex="0">Я согласен на обработку
             персональных данных</label>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>

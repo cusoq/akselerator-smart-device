@@ -12,6 +12,7 @@
   display: none;
 }
 
-.non-scroll {
-  overflow: hidden;
+.body-lock {
+  overflow-y: scroll;
+  position: fixed;
 }

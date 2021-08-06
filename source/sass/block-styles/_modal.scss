@@ -4,7 +4,11 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
-  overflow: scroll;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 135px 0 0 0;
 
   @media (max-width: 1023px) {
     display: none;
@@ -16,13 +20,10 @@
 }
 
 .modal {
-  position: fixed;
-  left: calc(50% - 245px);
-  top: 135px;
+  position: relative;
   width: 490px;
   background-color: #00b2ff;
   padding: 30px 40px 15px 40px;
-  z-index: 6;
 }
 
 .modal h2 {
