@@ -24,19 +24,19 @@
   line-height: 51px;
   font-weight: 400;
   color: #ffffff;
-  letter-spacing: 0.03em;
+  // letter-spacing: 0.03em;
   font-stretch: semi-condensed;
 
   @media (max-width: 1024px) {
     line-height: 44px;
     font-size: 32px;
     width: 86%;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
   }
 
   @media (max-width: 727px) {
     font-size: 28px;
-    letter-spacing: 0.01em;
+    // letter-spacing: 0.01em;
     line-height: 40px;
     width: 100%;
   }
@@ -47,7 +47,7 @@
   line-height: 30px;
   font-weight: 400;
   color: #ffffff;
-  letter-spacing: 0.04em;
+  // letter-spacing: 0.04em;
   font-stretch: semi-condensed;
   margin: 0;
 }
@@ -55,7 +55,7 @@
 .offers__link {
   @include hover-focus-activity();
   position: relative;
-  padding: 50px 40px;
+  padding: 50px 42px;
   width: 100%;
 
   &::after {
@@ -74,7 +74,7 @@
 
   @media (max-width: 1024px) {
     box-sizing: border-box;
-    padding: 45px 0 0 40px;
+    padding: 45px;
   }
 
   @media (max-width: 727px) {

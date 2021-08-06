@@ -43,45 +43,49 @@
 .features__features-list li {
   min-height: 300px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-
-  @media (max-width: 1024px) {
-    width: 47%;
-    min-height: 232px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 727px) {
-    width: 290px;
-    padding: 0;
-  }
-}
-
-.features__feature-link {
-  display: block;
-  text-align: left;
   height: 100%;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   padding: 40px 40px;
 
-  &:hover,
-  &:focus {
-    background-color: #00b2ff;
-  }
-
   @media (max-width: 1024px) {
+    width: 47%;
+    height: auto;
+    min-height: 232px;
+    margin: 0 auto;
     padding: 20px 10px 15px 25px;
   }
 
   @media (max-width: 727px) {
+    width: 290px;
     padding: 20px 0 10px 20px;
-    width: 100%;
   }
 }
+
+// .features__feature-link {
+//   display: block;
+//   text-align: left;
+//   height: 100%;
+//   background-color: #ffffff;
+//   border: 1px solid #ebebeb;
+//   border-left: 3px solid #00b2ff;
+//   padding: 40px 40px;
+
+//   // &:hover,
+//   // &:focus {
+//   //   background-color: #00b2ff;
+//   // }
+
+//   @media (max-width: 1024px) {
+//     padding: 20px 10px 15px 25px;
+//   }
+
+//   @media (max-width: 727px) {
+//     padding: 20px 0 10px 20px;
+//     width: 100%;
+//   }
+// }
 
 .features h3 {
   font-size: 24px;
@@ -90,14 +94,14 @@
   color: #00b2ff;
   margin: 8px 0;
   font-stretch: semi-condensed;
-  letter-spacing: 0.03em;
+  // letter-spacing: 0.02em;
 
   @media (max-width: 1024px) {
     margin: 0;
   }
 
   @media (max-width: 727px) {
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     font-size: 20px;
   }
 }
@@ -120,18 +124,17 @@
   }
 }
 
-.features__feature-link:hover svg {
-  // fill: #ffffff;
-  stroke: #ffffff;
-}
+// .features__feature-link:hover svg {
+//   stroke: #ffffff;
+// }
 
-.features__feature-link:hover h3 {
-  color: #ffffff;
-}
+// .features__feature-link:hover h3 {
+//   color: #ffffff;
+// }
 
-.features__feature-link:hover p {
-  color: #ffffff;
-}
+// .features__feature-link:hover p {
+//   color: #ffffff;
+// }
 
 .features br {
   display: none;

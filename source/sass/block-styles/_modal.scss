@@ -29,13 +29,26 @@
   margin: 0;
   font-size: 28px;
   line-height: 40px;
-  letter-spacing: 0.02em;
+  // letter-spacing: 0.02em;
   font-weight: 400;
   font-stretch: semi-condensed;
 }
 
+.modal p {
+  font-family: "PT Mono", "Courier", monospace;
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 22px;
+  width: 95%;
+}
+
+.modal input {
+  padding: 0 25px;
+}
+
 .modal textarea {
-  min-height: 75px;
+  min-height: 55px;
+  padding: 15px 25px;
 }
 
 .modal__close-button {

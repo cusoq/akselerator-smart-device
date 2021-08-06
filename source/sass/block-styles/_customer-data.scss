@@ -16,7 +16,7 @@
   @media (max-width: 727px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 45px 45px;
-    padding: 15px 0;
+    padding: 15px 0 15px 5px;
   }
 }
 
@@ -114,14 +114,14 @@
 }
 
 .customer-data button {
-  @include btn-like-link-mixin(14px, 42px, 47%);
+  @include btn-like-link-mixin(14px, 44px, 47%);
   @include hover-focus-activity();
   background-color: #00b2ff;
   color: #ffffff;
   cursor: pointer;
 
   @media (max-width: 727px) {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -175,6 +175,11 @@
 
   &--modal::before {
     left: -56px;
+  }
+
+  @media (max-width: 727px) {
+    top: -2px;
+    left: -10px;
   }
 }
 
