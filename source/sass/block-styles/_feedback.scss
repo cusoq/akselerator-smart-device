@@ -8,8 +8,7 @@
   background-image: url("../img/airplan.png");
   background-repeat: no-repeat;
   background-size: 90%;
-  background-position: 175px -55px;
-  padding: 0 375px 0 0;
+  background-position: 95% -55px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/airplan-2x.png");
@@ -27,12 +26,17 @@
   }
 }
 
+.feedback__container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .feedback__inner-wrapper {
   width: 100%;
   max-width: 570px;
   margin: 0 0 0 auto;
   padding: 90px 0 0 0;
-  background-color: rgba(0, 178, 255, 0.9);
 
   @media (max-width: 1023px) {
     max-width: 585px;
@@ -50,7 +54,6 @@
   margin: 0;
   font-size: 36px;
   line-height: 51px;
-  // letter-spacing: 0.02em;
   font-weight: 400;
   font-stretch: semi-condensed;
 

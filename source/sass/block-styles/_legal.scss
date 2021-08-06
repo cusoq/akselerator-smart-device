@@ -1,5 +1,7 @@
 .legal {
   border-top: 1px solid rgba(98, 105, 98, 0.2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .legal__list {
@@ -26,16 +28,20 @@
 .legal__text-info-list {
   @include list-reset();
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  width: 40%;
-  padding: 0 110px 0 0;
-  column-gap: 15px;
+  align-items: center;
+  width: 33%;
+  padding: 0 10px 0 0;
+  margin: 0 auto 0 0;
 
   @media (max-width: 1023px) {
     display: none;
   }
+}
+
+.legal__text-info-list li {
+  white-space: nowrap;
+  padding: 0 5px 0 0;
 }
 
 .legal__links-list {

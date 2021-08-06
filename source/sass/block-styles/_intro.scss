@@ -12,7 +12,6 @@
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    // background-size: 100%;
     background-image: url("../img/header-bg-desk-2x.png");
   }
 
@@ -23,7 +22,6 @@
     background-position: 51% -90px;
 
     @media (min-resolution: 2dppx) {
-      // background-size: 100%;
       background-image: url("../img/header-bg-tablet-2x.png");
     }
   }
@@ -32,7 +30,8 @@
     min-height: 575px;
     padding: 215px 15px 0 15px;
     background-image: url("../img/header-bg-mobil.png");
-    background-position: 51% -70px;
+    background-position: 100% -70px;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header-bg-mobil-2x.png");

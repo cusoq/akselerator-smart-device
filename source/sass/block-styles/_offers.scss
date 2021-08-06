@@ -24,19 +24,16 @@
   line-height: 51px;
   font-weight: 400;
   color: #ffffff;
-  // letter-spacing: 0.03em;
   font-stretch: semi-condensed;
 
   @media (max-width: 1023px) {
     line-height: 44px;
     font-size: 32px;
     width: 86%;
-    // letter-spacing: 0.03em;
   }
 
   @media (max-width: 727px) {
     font-size: 28px;
-    // letter-spacing: 0.01em;
     line-height: 40px;
     width: 100%;
   }
@@ -47,7 +44,6 @@
   line-height: 30px;
   font-weight: 400;
   color: #ffffff;
-  // letter-spacing: 0.04em;
   font-stretch: semi-condensed;
   margin: 0;
 }
@@ -177,7 +173,7 @@
 
 .offers li {
   max-width: 370px;
-  width: 31%;
+  width: 30.5%;
   min-height: 620px;
   display: flex;
   margin: 0 28px 48px 0;
