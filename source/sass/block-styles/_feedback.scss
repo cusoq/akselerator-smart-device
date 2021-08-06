@@ -15,7 +15,7 @@
     background-image: url("../img/airplan-2x.png");
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     padding: 0 90px;
     background-image: none;
     min-height: 660px;
@@ -34,7 +34,7 @@
   padding: 90px 0 0 0;
   background-color: rgba(0, 178, 255, 0.9);
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     max-width: 585px;
     width: 100%;
     margin: 0 auto;
@@ -54,7 +54,7 @@
   font-weight: 400;
   font-stretch: semi-condensed;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     font-size: 32px;
     line-height: 45px;
   }

@@ -16,7 +16,7 @@
     background-image: url("../img/header-bg-desk-2x.png");
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     min-height: 595px;
     padding: 95px 185px 0 90px;
     background-image: url("../img/header-bg-tablet.png");
@@ -47,7 +47,7 @@
   font-stretch: semi-condensed;
   margin: 0;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     font-size: 60px;
   }
 
@@ -78,7 +78,7 @@
     background-color: #ffffff;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     font-size: 18px;
     line-height: 28px;
     width: 85%;
@@ -108,7 +108,7 @@
   background-color: #00b2ff;
   margin: 0 0 0 100px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     @include btn-like-link-mixin (16px, 55px, 379px);
     box-shadow: none;
     margin: 0 0 0 50px;
@@ -134,7 +134,7 @@
   bottom: 100px;
   opacity: 0.5;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
