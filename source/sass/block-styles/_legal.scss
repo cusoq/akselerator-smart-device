@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   color: #000000;
+  padding: 0 15px;
 }
 
 .legal__list {
-  @include list-reset();
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,7 +61,7 @@
 
   @media (max-width: 1023px) {
     width: 100%;
-    padding: 0 25px;
+    padding: 10px;
   }
 
   @media (max-width: 727px) {

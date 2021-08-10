@@ -1,7 +1,7 @@
 .offers {
   min-height: 940px;
   background-color: #1b2d37;
-  padding: 60px 0 20px 0;
+  padding: 60px 15px 20px 15px;
 
   @media (max-width: 1023px) {
     padding: 25px 25px 32px 25px;
@@ -17,6 +17,7 @@
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .offers h2 {
@@ -161,7 +162,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0 0 0;
-  margin: 0 -56px 0 0;
+  margin: 0;
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -172,11 +173,18 @@
 }
 
 .offers li {
-  max-width: 370px;
-  width: 30.5%;
+  min-width: 280px;
+  max-width: 365px;
+  // width: 100%;
+  flex-grow: 1;
+
   min-height: 620px;
   display: flex;
-  margin: 0 28px 48px 0;
+  margin: 0 32px 48px 0;
+
+  &:nth-child(3n) {
+    margin: 0 0 48px 0;
+  }
 
   @media (max-width: 1023px) {
     max-width: 770px;
@@ -187,5 +195,9 @@
 
   @media (max-width: 727px) {
     margin: 0 0 32px 0;
+
+    &:nth-child(3n) {
+      margin: 0 0 32px 0;
+    }
   }
 }
