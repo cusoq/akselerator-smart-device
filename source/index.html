@@ -177,9 +177,9 @@
     <div class="footer__footer-header">
       <a class="footer__logo-link" href="" aria-label="Ссылка в виде логотипа">
         <picture>
-          <source type="image/webp" srcset="img/logo-footer-216-52.webp 1x, img/logo-footer-216-52-2x.webp 2x">
+          <!-- <source type="image/webp" srcset="img/logo-footer-216-52.webp 1x, img/logo-footer-216-52-2x.webp 2x"> -->
           <!-- 1х: 216px/52px; 2x: 432px/104px -->
-          <img src="img/logo-footer-216-52.png" srcset="img/logo-footer-216-52-2x 2x" width="216" height="52"
+          <img src="img/logo-footer-216-52.png" srcset="img/logo-footer-216-52-2x.png 2x" width="216" height="52"
             alt="Логотип компании">
         </picture>
       </a>
@@ -239,16 +239,16 @@
     </section>
     <section class="footer__legal legal">
       <h3 class="visually-hidden">Юридическая информация</h3>
-      <div class="legal__list">
+      <ul class="legal__list">
         <ul class="legal__text-info-list">
-          <li>Все права защищены</li>
-          <li>1999-2018 SD Service Devices</li>
+          <li class="legal__text-item">Все права защищены</li>
+          <li class="legal__text-item">1999-2018 SD Service Devices</li>
         </ul>
         <ul class="legal__links-list">
-          <li><a href="#">Условия конфиденциальности</a></li>
-          <li><a href="#" aria-label="Ссылка на сайт разработчика">Developed by wow studio</a></li>
+          <li class="legal__link-item"><a href="#">Условия конфиденциальности</a></li>
+          <li class="legal__link-item"><a href="#" aria-label="Ссылка на сайт разработчика">Developed by wow studio</a></li>
         </ul>
-      </div>
+      </ul>
     </section>
 
   </footer>

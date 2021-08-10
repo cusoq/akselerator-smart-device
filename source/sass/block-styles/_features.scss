@@ -48,6 +48,10 @@
   border-left: 3px solid #00b2ff;
   padding: 40px 40px;
 
+  &:hover {
+    background-color: #00b2ff;
+  }
+
   @media (max-width: 1023px) {
     width: 47%;
     height: auto;
@@ -101,4 +105,16 @@
   @media (max-width: 727px) {
     display: block;
   }
+}
+
+.features__features-list li:hover svg {
+  stroke: #ffffff;
+}
+
+.features__features-list li:hover h3 {
+  color: #ffffff;
+}
+
+.features__features-list li:hover p {
+  color: #ffffff;
 }

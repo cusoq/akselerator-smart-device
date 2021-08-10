@@ -2,6 +2,7 @@
   border-top: 1px solid rgba(98, 105, 98, 0.2);
   display: flex;
   justify-content: space-between;
+  color: #000000;
 }
 
 .legal__list {
@@ -39,7 +40,12 @@
   }
 }
 
-.legal__text-info-list li {
+.legal__text-item {
+  white-space: nowrap;
+  padding: 0 5px 0 0;
+}
+
+.legal__link-item {
   white-space: nowrap;
   padding: 0 5px 0 0;
 }
