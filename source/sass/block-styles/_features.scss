@@ -47,9 +47,11 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   padding: 40px 40px;
+  color: #666666;
 
   &:hover {
     background-color: #00b2ff;
+    color: #ffffff;
   }
 
   @media (max-width: 1023px) {
